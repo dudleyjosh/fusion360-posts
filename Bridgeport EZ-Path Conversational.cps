@@ -217,7 +217,7 @@ function getEzPathHeader() {
 // Return requested M & G Codes
 function getCode(code) {
 
-    var conversational = true;
+    var conversational = (extension == "pgm") ? true : false;
 
     switch(code) {
         // M-Codes
