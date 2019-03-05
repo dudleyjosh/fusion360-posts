@@ -28,7 +28,7 @@ maximumCircularRadius = spatial(1000, MM);
 minimumCircularSweep = toRad(0.01);
 maximumCircularSweep = toRad(180);
 allowHelicalMoves = true;
-allowedCircularPlanes = undefined; // allow any circular motion
+allowedCircularPlanes = (1 << PLANE_ZX); // allow only the ZX plane
 
 //machineConfiguration = new MachineConfiguration();
 //machineConfiguration.setModel = "EZ-Path SD";
